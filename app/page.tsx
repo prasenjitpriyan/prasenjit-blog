@@ -1,11 +1,7 @@
 import React from 'react'
 
-const Home = () => {
-  return (
-    <div className="h-[100svh] w-[100svw] flex justify-center items-center bg-color1">
-      Home
-    </div>
-  )
+const Home = async () => {
+  return <div>Home</div>
 }
 
 export default Home
