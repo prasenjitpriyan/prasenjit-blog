@@ -19,7 +19,7 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="h-16 flex justify-between items-center p-5 bg-color4">
+    <nav className="h-16 flex justify-between items-center px-5 md:p-10 bg-color4">
       <Link href={'/'} className="uppercase font-semibold text-color2">
         The Prasenjit&apos;s Blog
       </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Button */}
       <button
-        className="md:hidden text-2xl text-color1"
+        className="md:hidden text-2xl text-color1 hover:text-color2 cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? <IoMdClose /> : <RxHamburgerMenu />}
@@ -58,7 +58,7 @@ const Navbar = () => {
             >
               <Link
                 href={link.href}
-                className={`relative group ${
+                className={`relative group hover:text-color4 ${
                   pathname === link.href ? 'text-color2' : 'text-color1'
                 }`}
               >
