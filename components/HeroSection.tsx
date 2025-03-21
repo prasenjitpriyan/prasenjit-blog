@@ -18,8 +18,16 @@ const HeroSection = () => {
           </span>
         </h1>
         <div className="flex gap-2 text-3xl sm:text-6xl xl:text-8xl text-color2">
-          <FaPodcast />
-          <FaRegPlayCircle />
+          <FaPodcast aria-label="Podcast Icon" />
+          <FaRegPlayCircle aria-label="Play Icon" />
+        </div>
+      </div>
+      <div className="mx-5 min-h-[60svh] md:mx-10 mt-10 rounded bg-color1 text-color4 flex flex-col md:flex-row">
+        <div className="flex-1 lg:flex-[1_1_33.333%] flex items-center justify-center p-4 bg-color3">
+          01
+        </div>
+        <div className="flex-1 lg:flex-[1_1_66.666%] flex items-center justify-center p-4 bg-color2">
+          02
         </div>
       </div>
     </section>
