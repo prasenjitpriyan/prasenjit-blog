@@ -23,10 +23,10 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="mx-5 min-h-[60svh] md:mx-10 mt-10 rounded bg-color1 text-color4 flex flex-col md:flex-row">
-        <div className="flex-1 lg:flex-[1_1_33.333%] flex items-center justify-center p-4 bg-color3">
+        <div className="flex-1 lg:flex-[1_1_33.333%] flex items-center justify-center p-4">
           01
         </div>
-        <div className="flex-1 lg:flex-[1_1_66.666%] flex items-center justify-center p-4 bg-color2">
+        <div className="flex-1 lg:flex-[1_1_66.666%] flex items-center justify-center p-4">
           02
         </div>
       </div>
