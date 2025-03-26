@@ -1,12 +1,12 @@
 import React from 'react'
-import { FaLinkedin } from 'react-icons/fa'
-import { FaGithub } from 'react-icons/fa'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
+
   return (
-    <footer className="h-[50svh] bg-color4 relative">
-      <div className="px-5 md:px-10 py-24 flex justify-between">
+    <footer className="h-[50svh] bg-color4 flex flex-col justify-between p-5 md:p-10">
+      <div className="py-24 flex justify-between">
         <h1 className="flex flex-col xl:flex-row uppercase text-3xl sm:text-6xl xl:text-8xl font-extrabold gap-5 text-color2">
           The Prasenjit&apos;s
           <span className="text-color2 flex xl:flex-col gap-1">
@@ -21,13 +21,9 @@ const Footer = () => {
           <FaGithub />
         </div>
       </div>
-      <div className="px-5 md:px-10 border-t border-color2 absolute bottom-12 w-full">
-        <div className="flex flex-col items-center justify-center relative">
-          <p className="text-center text-color1 absolute bottom-[-2.2rem]">
-            All rights reserved. © {currentYear} The Prasenjit&apos;s
-          </p>
-        </div>
-      </div>
+      <p className="border-t border-color2 text-center text-color1 py-4">
+        All rights reserved. © {currentYear} The Prasenjit&apos;s
+      </p>
     </footer>
   )
 }
